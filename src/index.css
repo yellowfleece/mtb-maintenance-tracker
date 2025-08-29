@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom MTB-themed styles */
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  }
+}
+
+@layer base {
+  :root {
+    --powder-blue: #0072CE;
+    --sunshine-gold: #FFB81C;
+    --navy-blue: #0C2340;
+    --powder-blue-light: #4A9AE1;
+    --powder-blue-dark: #005A9F;
+    --sunshine-gold-light: #FFD65C;
+    --sunshine-gold-dark: #E6A500;
+    --navy-blue-light: #1B3A5F;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: #0C2340 !important;
+    color: white !important;
+    @apply font-semibold py-2 px-4 rounded-lg transition duration-200 shadow-sm;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1B3A5F !important;
+  }
+  
+  .btn-secondary {
+    background-color: #0072CE !important;
+    color: white !important;
+    @apply font-semibold py-2 px-4 rounded-lg transition duration-200 shadow-sm;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #005A9F !important;
+  }
+  
+  .btn-accent {
+    background-color: #FFB81C !important;
+    color: #0C2340 !important;
+    @apply font-semibold py-2 px-4 rounded-lg transition duration-200 shadow-sm;
+  }
+  
+  .btn-accent:hover {
+    background-color: #E6A500 !important;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 border hover:shadow-lg transition-shadow duration-200;
+    border-color: #0C2340 !important;
+  }
+  
+  .nav-active {
+    background-color: #0C2340 !important;
+    color: #FFB81C !important;
+    border: 1px solid #0C2340 !important;
+  }
+  
+  .nav-inactive {
+    color: #0C2340 !important;
+    @apply transition duration-150 ease-in-out;
+  }
+  
+  .nav-inactive:hover {
+    color: #FFB81C !important;
+    background-color: rgba(12, 35, 64, 0.1) !important;
+  }
+  
+  .text-powder-blue {
+    color: #0072CE !important;
+  }
+  
+  .text-powder-blue-dark {
+    color: #005A9F !important;
+  }
+  
+  .text-sunshine-gold {
+    color: #FFB81C !important;
+  }
+  
+  .text-sunshine-gold-dark {
+    color: #E6A500 !important;
+  }
+  
+  .text-navy-blue {
+    color: #0C2340 !important;
+  }
+  
+  .bg-powder-blue-5 {
+    background-color: rgba(0, 114, 206, 0.05);
+  }
+  
+  .bg-powder-blue-10 {
+    background-color: rgba(0, 114, 206, 0.1);
+  }
+  
+  .bg-sunshine-gold-10 {
+    background-color: rgba(255, 184, 28, 0.1);
+  }
+  
+  .bg-sunshine-gold-20 {
+    background-color: rgba(255, 184, 28, 0.2);
+  }
+  
+  .bg-powder-blue-20 {
+    background-color: rgba(0, 114, 206, 0.2);
+  }
+  
+  .border-powder-blue-20 {
+    border-color: rgba(0, 114, 206, 0.2);
+  }
+  
+  .border-powder-blue-30 {
+    border-color: rgba(0, 114, 206, 0.3);
+  }
+  
+  .border-sunshine-gold-30 {
+    border-color: rgba(255, 184, 28, 0.3);
+  }
+  
+  .border-sunshine-gold-50 {
+    border-color: rgba(255, 184, 28, 0.5);
+  }
+}

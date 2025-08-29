@@ -1,0 +1,80 @@
+  1. LLM Integration:
+
+  - Should I use a client-side approach (like calling OpenAI API directly from browser) or do you want a
+  more robust backend solution?
+  - Do you have an OpenAI API key, or would you prefer I build it to accept user-provided API keys?
+  - Any preference for which model (GPT-4, GPT-3.5, Claude, etc.)?
+
+  2. Recommendation Content:
+
+  - What specific data should I send to the LLM? I'm thinking:
+    - All maintenance items with their status, last performed dates, intervals
+    - Bike type, age, usage patterns
+    - Current overdue/pending items
+    - Seasonal considerations (current date)
+  - Should it consider bike usage data (miles/hours) if available?
+
+  3. Recommendation Format:
+
+  - How should the recommendations be displayed? I'm envisioning:
+    - Replace the "Due Soon" and "High Priority" tiles with a single "Recommendations" section
+    - Show prioritized list with reasoning (e.g., "High Priority: Brake pad inspection - overdue by 15 days
+   and safety critical")
+    - Include seasonal advice ("Winter prep: Check tire sealant levels before cold weather")
+  - Would you like actionable buttons (e.g., "Mark as Completed", "Schedule Reminder")?
+
+  4. User Experience:
+
+  - Should recommendations be automatically generated on Dashboard load, or triggered by a "Generate
+  Recommendations" button?
+  - How often should they refresh? (every visit, daily, weekly?)
+  - Should there be a loading state while the LLM processes?
+
+  5. Context & Personalization:
+
+  - Should I include bike-specific context (e.g., "Mountain bike used in muddy conditions needs more
+  frequent drivetrain cleaning")?
+  - Any rider profile info to consider (skill level, riding frequency, typical conditions)?
+  - Should it learn from user patterns (e.g., if they consistently delay certain maintenance)?
+
+  6. Fallback Behavior:
+
+  - What happens if the LLM API is unavailable? Fall back to the current tile system?
+  - Should there be offline/cached recommendations?
+
+  My initial vision: A "Generate Recommendations" button that sends current maintenance status to an LLM,
+  which returns a prioritized list like:
+  🚨 Immediate Action (Next 7 days):
+  - Bleed brakes: 45 days overdue - safety critical for mountain biking
+
+  ⚠️ Plan Soon (Next 30 days):
+  - Fork service: Due in 12 days based on 48 riding hours
+  - Chain replacement: 0.6% wear detected, replace before damage spreads
+
+  💡 Seasonal Advice:
+  - Winter prep: Add tire sealant before temperature drops
+
+  What are your thoughts on these questions? Any specific requirements or preferences?
+
+
+LLM Integration:
+A client-side approach is fine.
+I have an OpenAI API key
+Preference would be the cheapest model for starters.
+Recommendation Content:
+Send all the data you suggested
+Considering bike usage is a good idea, I track this data in Garmin.  Can we skip this feature for now and plan to integrate later.
+Recommendation Format:
+Your vision on the format is spot on, let's go with that.
+Actionable buttons are not needed for this version.
+User Experience:
+Recommendations should definitely be triggered by a "Generate Maintenance Recommendations", then a prompt for which bike in the fleet
+No need to refresh with this manual approach
+Yes, have a loading state while the LLM processes.
+Context & Personalization
+Bike specific context is welcomed.
+No rider consideration necessary in this version.
+Learning from user patterns would be great.
+Fallback Behavior:
+If the LLM API is unavailable, just have an error notification to troubleshoot
+No need for offline recommendations; this will not be used very frequently

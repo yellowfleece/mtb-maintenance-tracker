@@ -1,0 +1,338 @@
+{
+  "bikes": [
+    {
+      "id": "1",
+      "name": "Full Suspension - Primary",
+      "brand": "Santa Cruz",
+      "model": "5010",
+      "year": 2022,
+      "type": "mountain",
+      "wheelSize": "27.5\"",
+      "createdAt": "2024-01-15T00:00:00Z",
+      "maintenanceItems": [
+        {
+          "id": "1",
+          "name": "Clean & Lube Drivetrain",
+          "category": "drivetrain",
+          "interval": 3,
+          "intervalType": "rides",
+          "priority": "medium",
+          "status": "completed",
+          "lastPerformed": "2025-08-28T00:00:00.000Z",
+          "partsCost": 10,
+          "notes": "Especially in wet/muddy conditions"
+        },
+        {
+          "id": "2",
+          "name": "Battery Levels (Wireless Components)",
+          "category": "controls",
+          "interval": 30,
+          "intervalType": "days",
+          "priority": "low",
+          "status": "completed",
+          "lastPerformed": "2025-08-28T21:15:44.698Z",
+          "partsCost": 0,
+          "notes": "AXS/Dropper/etc"
+        },
+        {
+          "id": "3",
+          "name": "Tighten All Bolts (Torque)",
+          "category": "safety",
+          "interval": 30,
+          "intervalType": "days",
+          "priority": "high",
+          "status": "completed",
+          "lastPerformed": "2025-01-31T00:00:00.000Z",
+          "partsCost": 0,
+          "notes": "Use torque wrench and manufacturer guidance"
+        },
+        {
+          "id": "4",
+          "name": "Add Tire Sealant",
+          "category": "tires",
+          "interval": 75,
+          "intervalType": "days",
+          "priority": "medium",
+          "status": "completed",
+          "lastPerformed": "2025-05-14T00:00:00.000Z",
+          "partsCost": 15,
+          "notes": ""
+        },
+        {
+          "id": "5",
+          "name": "Firmware Update (Electronic Components)",
+          "category": "controls",
+          "interval": 120,
+          "intervalType": "days",
+          "priority": "low",
+          "status": "completed",
+          "lastPerformed": "2025-08-28T21:04:10.085Z",
+          "partsCost": 0,
+          "notes": "Use the app!"
+        },
+        {
+          "id": "6",
+          "name": "Inspect Dropper Cable",
+          "category": "controls",
+          "interval": 90,
+          "intervalType": "days",
+          "priority": "medium",
+          "status": "completed",
+          "lastPerformed": "2024-06-29T00:00:00.000Z",
+          "partsCost": 0,
+          "notes": "Check for slow return"
+        },
+        {
+          "id": "7",
+          "name": "Check Spoke Tension",
+          "category": "wheels",
+          "interval": 90,
+          "intervalType": "days",
+          "priority": "medium",
+          "status": "completed",
+          "lastPerformed": "2022-04-01T00:00:00.000Z",
+          "partsCost": 0,
+          "notes": ""
+        },
+        {
+          "id": "8",
+          "name": "True Wheels",
+          "category": "wheels",
+          "interval": 90,
+          "intervalType": "days",
+          "priority": "medium",
+          "status": "completed",
+          "lastPerformed": "2022-04-01T00:00:00.000Z",
+          "partsCost": 25,
+          "notes": "As needed / Check spoke tension"
+        },
+        {
+          "id": "9",
+          "name": "Check Brake Rotor Wear",
+          "category": "brakes",
+          "interval": 120,
+          "intervalType": "days",
+          "priority": "high",
+          "status": "completed",
+          "lastPerformed": "2025-04-01T00:00:00.000Z",
+          "partsCost": 0,
+          "notes": "Replace at 1.8mm thickness"
+        },
+        {
+          "id": "10",
+          "name": "Inspect Frame for Cracks/Damage",
+          "category": "frame",
+          "interval": 90,
+          "intervalType": "days",
+          "priority": "high",
+          "status": "completed",
+          "lastPerformed": "2025-08-01T00:00:00.000Z",
+          "partsCost": 0,
+          "notes": "After crashes / quarterly"
+        },
+        {
+          "id": "11",
+          "name": "Check Torque on Suspension Bolts",
+          "category": "suspension",
+          "interval": 90,
+          "intervalType": "days",
+          "priority": "high",
+          "status": "completed",
+          "lastPerformed": "2024-06-01T00:00:00.000Z",
+          "partsCost": 0,
+          "notes": "Loctite may be needed"
+        },
+        {
+          "id": "12",
+          "name": "Inspect & Grease Crankset",
+          "category": "drivetrain",
+          "interval": 180,
+          "intervalType": "days",
+          "priority": "medium",
+          "status": "completed",
+          "lastPerformed": "2025-04-01T00:00:00.000Z",
+          "partsCost": 15,
+          "notes": "Pull cranks + clean BB"
+        },
+        {
+          "id": "13",
+          "name": "Inspect & Grease Linkage Bearings",
+          "category": "frame",
+          "interval": 180,
+          "intervalType": "days",
+          "priority": "medium",
+          "status": "completed",
+          "lastPerformed": "2024-05-31T00:00:00.000Z",
+          "partsCost": 25,
+          "notes": ""
+        },
+        {
+          "id": "14",
+          "name": "Bleed Brakes",
+          "category": "brakes",
+          "interval": 180,
+          "intervalType": "days",
+          "priority": "high",
+          "status": "completed",
+          "lastPerformed": "2024-04-01T00:00:00.000Z",
+          "partsCost": 20,
+          "notes": "Follow SOP / YT How-to - or when mushy"
+        },
+        {
+          "id": "15",
+          "name": "Grease Headset",
+          "category": "frame",
+          "interval": 270,
+          "intervalType": "days",
+          "priority": "medium",
+          "status": "completed",
+          "lastPerformed": "2023-07-01T00:00:00.000Z",
+          "partsCost": 10,
+          "notes": ""
+        },
+        {
+          "id": "16",
+          "name": "Fork Lower Service",
+          "category": "suspension",
+          "interval": 50,
+          "intervalType": "hours",
+          "priority": "high",
+          "status": "completed",
+          "lastPerformed": "2022-04-01T00:00:00.000Z",
+          "partsCost": 75,
+          "notes": "Follow SOP / YT How-to"
+        },
+        {
+          "id": "17",
+          "name": "Shock Air Can Service",
+          "category": "suspension",
+          "interval": 75,
+          "intervalType": "hours",
+          "priority": "high",
+          "status": "completed",
+          "lastPerformed": "2022-04-01T00:00:00.000Z",
+          "partsCost": 50,
+          "notes": ""
+        },
+        {
+          "id": "18",
+          "name": "Replace Chain",
+          "category": "drivetrain",
+          "interval": 650,
+          "intervalType": "miles",
+          "priority": "medium",
+          "status": "completed",
+          "lastPerformed": "2025-08-14T00:00:00.000Z",
+          "partsCost": 65,
+          "notes": "Every 0.5% wear (~500-800mi)"
+        },
+        {
+          "id": "19",
+          "name": "Replace Brake Pads",
+          "category": "brakes",
+          "interval": 1000,
+          "intervalType": "miles",
+          "priority": "high",
+          "status": "completed",
+          "lastPerformed": "2025-03-01T00:00:00.000Z",
+          "partsCost": 45,
+          "notes": "When <1.5mm or noisy - Validate organic or metallic"
+        },
+        {
+          "id": "20",
+          "name": "Replace Tires",
+          "category": "tires",
+          "interval": 1500,
+          "intervalType": "miles",
+          "priority": "high",
+          "status": "completed",
+          "lastPerformed": "2023-01-01T00:00:00.000Z",
+          "partsCost": 120,
+          "notes": "When worn or damaged - Check casing + tread"
+        },
+        {
+          "id": "21",
+          "name": "Replace Derailleur Cable",
+          "category": "drivetrain",
+          "interval": 365,
+          "intervalType": "days",
+          "priority": "medium",
+          "status": "completed",
+          "lastPerformed": "2025-08-20T00:00:00.000Z",
+          "partsCost": 30,
+          "notes": "Yearly / as needed"
+        },
+        {
+          "id": "22",
+          "name": "Full Suspension Service",
+          "category": "suspension",
+          "interval": 100,
+          "intervalType": "hours",
+          "priority": "high",
+          "status": "completed",
+          "lastPerformed": "2022-04-01T00:00:00.000Z",
+          "partsCost": 200,
+          "notes": "Annually / 100+ hrs"
+        }
+      ],
+      "configuration": {
+        "forkPressure": 118,
+        "forkClicks": 6,
+        "shockPressure": 235,
+        "shockClicks": 5,
+        "hasShock": true,
+        "frontTirePSI": 22,
+        "rearTirePSI": 24,
+        "riderWeight": 225,
+        "lastUpdated": "2025-08-28T21:03:33.103Z"
+      },
+      "links": [
+        {
+          "id": "1756417420565",
+          "title": "Manufacturer Specs",
+          "url": "https://www.santacruzbicycles.com/pages/product-support/5010-4",
+          "description": ""
+        },
+        {
+          "id": "1756417435582",
+          "title": "Rear Shock Manual",
+          "url": "https://santacruzbikesstatic.cdn.prismic.io/santacruzbikesstatic/155c5961-1bc4-4295-9ddd-ef65ec535493_santa_cruz_5010_and_juliana_furtado_-_shock_setup_guide.pdf",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "1756417007951",
+      "name": "Gravel",
+      "brand": "Ibis",
+      "model": "Hakka MX",
+      "year": 2021,
+      "type": "gravel",
+      "wheelSize": "700c",
+      "createdAt": "2025-08-28T21:36:47.951Z",
+      "maintenanceItems": [],
+      "configuration": {
+        "forkPressure": 0,
+        "forkClicks": 0,
+        "shockPressure": 0,
+        "shockClicks": 0,
+        "hasShock": true,
+        "frontTirePSI": 42,
+        "rearTirePSI": 45,
+        "riderWeight": 225,
+        "lastUpdated": "2025-08-28T21:37:05.270Z"
+      },
+      "links": [
+        {
+          "id": "1756417391449",
+          "title": "Manufacturer Specs",
+          "url": "https://www.ibiscycles.com/bikes/past-models/hakka-mx-1",
+          "description": ""
+        }
+      ]
+    }
+  ],
+  "currentBikeId": "1",
+  "exportDate": "2025-08-28T21:44:02.599Z",
+  "version": "2.1"
+}
