@@ -1,6 +1,7 @@
 # MTB Maintenance Tracker
 
 A comprehensive React-based web application for tracking mountain bike maintenance across multiple bikes. Built with professional maintenance schedules and AI-powered recommendations.
+Version: 260209
 
 ## 🚴‍♂️ Features
 
