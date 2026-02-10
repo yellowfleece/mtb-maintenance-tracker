@@ -25,3 +25,6 @@ dist-ssr
 
 # Configuration files with API keys
 public/config.json
+
+# Local clone of template repo used for copying files
+structure-repo/
