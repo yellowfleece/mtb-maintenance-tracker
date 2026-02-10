@@ -3,8 +3,8 @@
 ## 📊 **Project Overview**
 **Repository**: https://github.com/yellowfleece/mtb-maintenance-tracker  
 **Live Demo**: [Your Netlify URL]  
-**Status**: Production-ready with comprehensive roadmap  
-**Development Stage**: Core features complete, enhancement roadmap established
+**Status**: Modernization in Progress
+**Development Stage**: Core features complete, modernization underway (Phase 1 prep)
 
 ## 🏗️ **What We Built**
 
@@ -209,13 +209,106 @@ git push origin main          # Auto-deploys to Netlify
 
 ---
 
-## 🚴‍♂️ **Ready to Continue**
+## 🔄 **Modernization in Progress**
 
-Your MTB Maintenance Tracker is a **production-ready, professional-grade application** with a clear roadmap for future enhancements. The next logical step is **Issue #1 (Priority System Refactor)** to clean up the UI and make the AI responsible for all priority intelligence.
+### **Current Phase: Repository Setup** (2026-02-10)
 
-**Project Status**: ✅ **Production Ready** | 🚀 **Enhancement Phase** | 📋 **Roadmap Defined**
+The MTB Maintenance Tracker is undergoing a comprehensive modernization effort to transform it from a learning project into a maintainable, secure, and scalable production application.
+
+### **Modernization Overview**
+- **Master Plan**: See `docs/00-Planning/MODERNIZATION-MASTER-PLAN.md`
+- **Decision Log**: See `docs/00-Planning/DECISION-LOG.md`
+- **Timeline**: 5 phases over 8-10 weeks
+- **Current Status**: ⚙️ Repository structure and documentation setup
+
+### **5-Phase Modernization Roadmap**
+
+#### **Phase 1: Foundation & Infrastructure** (Weeks 1-2)
+- Migrate to TypeScript
+- Set up Vitest testing infrastructure
+- Configure ESLint, Prettier, and Husky
+- Create first smoke tests
+
+#### **Phase 2: Architecture Refactoring** (Weeks 3-5)
+- Break down monolithic App.jsx (<300 lines target)
+- Extract 10+ modular components
+- Create custom hooks (useBikes, useLocalStorage, etc.)
+- Build service layer (API, storage, OpenAI)
+
+#### **Phase 3: Security & Quality Hardening** (Weeks 6-7)
+- Fix API key exposure vulnerability
+- Add input validation with Zod
+- Replace browser alerts with toast notifications
+- Achieve 70%+ test coverage
+
+#### **Phase 4: Performance & Accessibility** (Week 8)
+- Add React.memo optimizations
+- Implement code splitting
+- Achieve WCAG 2.1 AA compliance
+- Target Lighthouse score >90
+
+#### **Phase 5: Feature Enhancement & Polish** (Weeks 9-10)
+- Add IndexedDB support (optional upgrade from localStorage)
+- Set up CI/CD pipeline with GitHub Actions
+- Complete SDLC documentation
+- Prepare for cloud sync (Supabase integration - future)
+
+### **Key Documentation**
+
+**Planning Phase** (`docs/00-Planning/`):
+- MODERNIZATION-MASTER-PLAN.md - Complete 5-phase strategy
+- DECISION-LOG.md - Key architectural and strategic decisions
+
+**Discovery Phase** (`docs/01-Discovery/`):
+- current-state-assessment.md - Pre-modernization codebase analysis
+- code-quality-review.md - Technical debt and recommendations
+- user-needs-analysis.md - Why modernization matters for users
+
+**Architecture Phase** (`docs/04-Architecture/`):
+- ADR-002-database-strategy.md - Database evolution path (localStorage → IndexedDB → Supabase)
+
+### **Database Evolution Strategy**
+1. **Phase 1-3**: Keep localStorage (stable foundation)
+2. **Phase 4-5**: Add IndexedDB support (optional, better local storage)
+3. **Post-Phase 5**: Migrate to Supabase (cloud sync, PostgreSQL backend)
+
+### **GitHub Issues Reorganization** (Manual Setup Required)
+
+Due to GitHub account considerations, the following should be set up manually:
+
+**Milestones to Create**:
+1. Milestone 1: Foundation & Infrastructure (Weeks 1-2)
+2. Milestone 2: Architecture Refactoring (Weeks 3-5)
+3. Milestone 3: Security & Quality Hardening (Weeks 6-7)
+4. Milestone 4: Performance & Accessibility (Week 8)
+5. Milestone 5: Feature Enhancements (Weeks 9-10)
+
+**Labels to Create**:
+- `modernization`, `legacy-feature`, `technical-debt`, `security`, `accessibility`
+- `phase-1`, `phase-2`, `phase-3`, `phase-4`, `phase-5`
+
+**New Issues to Create** (see `docs/00-Planning/github-setup-guide.md` for details):
+- Issues #7-10: Phase 1 tasks
+- Issues #11-15: Phase 2 tasks
+- Issues #16-20: Phase 3 tasks
+- Issues #21-23: Phase 4 tasks
+- Issues #24-26: Phase 5 tasks
+- Issue #27: Master tracking issue
 
 ---
 
-*Generated: August 29, 2025*  
-*Last Updated: Initial project completion*
+## 🚴‍♂️ **Project Status Update**
+
+Your MTB Maintenance Tracker remains a **production-ready application** while undergoing systematic modernization to ensure long-term maintainability, security, and extensibility.
+
+**Current Status**: 🔧 **Modernization Setup** | 📋 **Repository Structure Complete** | 🚀 **Ready for Phase 1**
+
+**Next Steps**:
+1. Review modernization documentation in `docs/00-Planning/`
+2. Manually create GitHub milestones and labels (see guide)
+3. Begin Phase 1: Foundation & Infrastructure
+
+---
+
+*Generated: August 29, 2025*
+*Last Updated: February 10, 2026 - Modernization kickoff*
